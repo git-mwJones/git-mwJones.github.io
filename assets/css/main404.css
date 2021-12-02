@@ -1,0 +1,112 @@
+/* VARS */
+:root {
+    --dark-green: rgb(16, 94, 98);
+    --light-blue: rgb(107, 197, 210);
+    --dark-blue: rgb(51, 63, 80);
+    --red: rgb(181, 82, 92);
+    --grey: rgb(236, 244, 243);
+    --yellow: rgb(255, 216, 110);
+    --black: #231E23
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--grey);
+}
+
+body {
+    height: 100vh;
+    widht: 100vw
+}
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-item {
+    border: 2px solid black;
+    place-self: center center;
+}
+
+
+.main-grid {
+    grid-template-columns: minmax(290px, 20%) auto;
+    grid-template-rows: 30% 70%;
+}
+
+/* SIDEBAR */
+.sidebar {
+    border-right: 5px solid var(--red);
+    background-color: var(--dark-green);
+    grid-area: 1 / 1 / span 2 / span 1;
+    grid-template-rows: 30% 70%;
+}
+
+.image-container {
+    grid-row-start: 1 span 1;
+}
+
+.headshot {
+    width: 200px;
+    border-radius: 100%;
+    border: 5px solid var(--red);
+    overflow:hidden;
+    place-self: center center;
+}
+
+.sidebar-intro {
+    grid-row-start: 2 span 1;
+}
+
+.sidebar-intro > h1 {
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
+    color: #ffffff;
+    text-align: center;
+}
+
+.sidebar-intro > p {
+    margin: 3rem 0;
+    color: #b7eadc;
+    font-size: 1.2rem;
+    padding-left: 10%;
+    font-family: 'Karla', sans-serif;
+}
+
+
+/* HEADER */
+.header > img {
+    padding-top: 1.5rem;
+    width: 200px;
+    place-self: center center;
+}
+
+.header > h1 {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 0.7rem;
+    letter-spacing: 3px;
+}
+
+.header > hr {
+    border-style: none;
+    border-top: dotted;
+    border-width: 0.4rem;
+    border-color: var(--red);
+    width: 45%;
+    justify-self: center;
+}
+
+.header > .message {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
