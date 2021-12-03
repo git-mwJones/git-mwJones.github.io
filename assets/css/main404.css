@@ -17,7 +17,7 @@ html, body {
 
 body {
     height: 100vh;
-    widht: 100vw
+    width: 100vw;
 }
 
 .grid-container {
@@ -34,7 +34,7 @@ body {
 
 .main-grid {
     grid-template-columns: minmax(290px, 20%) auto;
-    grid-template-rows: 30% 70%;
+    /* grid-template-rows: 30% 70%; */
 }
 
 /* SIDEBAR */
@@ -78,6 +78,13 @@ body {
 
 
 /* HEADER */
+.header {
+    grid-area: 1 / 2 / span 1 / -1;
+    justify-content: center;
+    place-content: center;
+    height: 100%;
+}
+
 .header > img {
     padding-top: 1.5rem;
     width: 200px;
@@ -89,7 +96,7 @@ body {
     font-family: 'Karla', sans-serif;
     font-size: 2.5rem;
     color: var(--black);
-    margin-bottom: 0.7rem;
+    margin: 0;
     letter-spacing: 3px;
 }
 
@@ -100,6 +107,7 @@ body {
     border-color: var(--red);
     width: 45%;
     justify-self: center;
+    margin: 1rem;
 }
 
 .header > .message {
@@ -109,4 +117,11 @@ body {
     font-weight: bold;
     font-size: 1rem;
     letter-spacing: 2px;
+    margin-bottom: 1.5rem;
 }
+
+/* DASHBOARD */
+#dashboardContainer {
+    width: 100%;
+}
+
