@@ -82,6 +82,7 @@ body {
 .sidebar > h1 {
     font-family: var(--name-font);
     color: #ffffff;
+    margin: 5px;
 
     display:none;
 }
@@ -131,10 +132,66 @@ body {
     letter-spacing: 0.5px;
 }
 
+.header i {
+    color: var(--dark-blue);
+    font-size: 35px;
+}
+
+.header i:hover {
+    color: var(--sea-green);
+}
+
 hr {
     border-style: none;
     border-top: dotted;
     border-width: 0.4rem;
     border-color: var(--red);
     width: 40%;
+}
+
+@media (max-width: 1900px) {
+    .sidebar > h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 1650px) {
+    .sidebar > h1 {
+        font-size: 1.5rem;
+    }
+
+    .points p {
+        font-size: 1rem;
+        margin: 1.2rem;
+    }
+}
+
+
+@media (max-width: 1425px) {
+    .sidebar > h1 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1130px) {
+    .points p {
+        font-size: 15px;
+        margin: 0.5rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .sidebar > img {
+        width: 100px;
+    }
+
+    .sidebar > h1 {
+        font-size: 0.85rem;
+    }
+
+    .points p {
+        font-size: 0.7rem;
+        margin: 1.2rem;
+    }
 }
