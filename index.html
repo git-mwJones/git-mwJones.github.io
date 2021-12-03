@@ -6,6 +6,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main404.css" />
+	<!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/83eb5923db.js" crossorigin="anonymous"></script>
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +16,13 @@
 </head>
 
 <body>
+	<div id="main-grid" class="grid-container">
 
-	<div class="main-grid grid-container">
-
-		<div class="sidebar grid-container">
-			<div class="image-container grid-container">
-				<img src="images/headshot.jpg" alt="Headshot Image" class="headshot">
-			</div>
-			<div class="sidebar-intro">
-				<h1 class="intro">I'm Mathew Jones</h1>
+		<div class="sidebar">
+			<span role="button" class="nav-button"><i class="fas fa-bars"></i></span>
+			<img src="images/headshot.jpg" alt="Professional headshot photo">
+			<h1>I'm Mathew Jones</h1>
+			<div class="points">
 				<p>Former United States Marine</p>
 				<p>B.S. in Statistics</p>
 				<p>Data Analytics Graduate Student</p>
@@ -31,28 +31,17 @@
 		</div>
 
 		<div class="header grid-container">
-			<img src="images/swing.png" alt="Image of a swing set">
-			<h1>Thanks for swinging by!</h1>
-			<hr>
-			<span class="message">
+			<div class="message">
+				<img src="images/swing.png" alt="Image of a swing set">
+				<h1>Thanks for swinging by!</h1>
+				<hr>
 				<p>
 					This site is currently under construction! In the meantime, here is a preview of things to come:
 				</p>
-			</span>
-
-			<div id="dashboardContainer">
-				<iframe
-					src="https://app.powerbi.com/view?r=eyJrIjoiN2Y1MTM3YjEtOWYzZC00MzM4LWIzZTEtNGZlZjJmN2FiN2YzIiwidCI6IjhlZTE3ZjA3LTc0YmUtNDFlNC1hNjE5LThlZTc5MmYyNGVhOSJ9"
-					frameborder="0" allowFullScreen="true"></iframe>
 			</div>
-
-
 		</div>
 
-
-
 	</div>
-
 	<script src="./assets/js/main.js"></script>
 </body>
 

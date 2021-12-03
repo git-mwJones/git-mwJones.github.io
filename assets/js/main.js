@@ -1,19 +1,15 @@
-function resizeIFrameToFitContent(iFrame) {
-	console.log(iFrame)
+const navButton = document.querySelector('.nav-button i');
+const sidebar = document.querySelector('.sidebar');
+const mainGrid = document.getElementById('main-grid');
+const sidebarElements = document.querySelectorAll('.sidebar *');
 
-	var dashboardContainer = document.getElementById("dashboardContainer");
+navButton.addEventListener('click', toggleExpanded);
 
-	iFrame.width = dashboardContainer.offsetWidth;
-	iFrame.height = dashboardContainer.offsetHeight;
-	console.log(dashboardContainer.offsetHeight)
-	console.log(dashboardContainer.offsetWidth)
+function toggleExpanded() {
+	sidebar.classList.toggle('expanded');
+	mainGrid.classList.toggle('expanded');
+
+	sidebarElements.forEach((ele) => {
+		ele.classList.toggle('expanded')
+	});
 }
-
-window.addEventListener(
-	'load',
-	function(e) {
-		var iFrame = document.querySelector('iframe')
-		
-		resizeIFrameToFitContent(iFrame)
-	}
-)
