@@ -161,6 +161,12 @@ hr {
     display: none;
     grid-area: 1 / 2 / span 1 / span 1;
     font-family: 'Share Tech Mono', monospace;
+
+    color: var(--dark-blue);
+}
+
+.dashLink a:hover {
+    color: var(--sea-green);
 }
 
 @media (max-width: 1900px) {
