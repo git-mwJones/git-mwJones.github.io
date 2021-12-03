@@ -33,7 +33,8 @@ body {
 
 
 .main-grid {
-    grid-template-columns: minmax(290px, 20%) auto;
+    grid-template-columns: 1fr;
+    place-content: center center;
     /* grid-template-rows: 30% 70%; */
 }
 
@@ -79,7 +80,6 @@ body {
 
 /* HEADER */
 .header {
-    grid-area: 1 / 2 / span 1 / -1;
     justify-content: center;
     place-content: center;
     height: 100%;
