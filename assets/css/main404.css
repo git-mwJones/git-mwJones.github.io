@@ -113,7 +113,9 @@ body {
 /* HEADER */
 .header {
     grid-area: 1 / 2 / span 1 / span 1;
+    row-gap: 15px;
     grid-template-rows: minmax(0, 4fr) minmax(0, 6fr);
+    padding-bottom: 15px;
 }
 
 .header > div.message {
@@ -128,13 +130,10 @@ body {
     padding-top: 2rem;
 }
 
-.header > p {
-    letter-spacing: 0.5px;
-}
-
 .header i {
     color: var(--dark-blue);
     font-size: 35px;
+    margin-bottom: 50px;
 }
 
 .header i:hover {
@@ -147,6 +146,21 @@ hr {
     border-width: 0.4rem;
     border-color: var(--red);
     width: 40%;
+}
+
+/* DASHBOARD */
+.dashContainer {
+    justify-self: center;
+    min-height:100%;
+    min-width: 100%;
+
+    text-align: center;
+}
+
+.dashLink a {
+    display: none;
+    grid-area: 1 / 2 / span 1 / span 1;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 @media (max-width: 1900px) {
@@ -171,12 +185,49 @@ hr {
     .sidebar > h1 {
         font-size: 1.25rem;
     }
+
+    .message > p {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 1130px) {
     .points p {
         font-size: 15px;
         margin: 0.5rem;
+    }
+
+    iframe {
+        width: 600px;
+        height: 373.5px;
+    }
+
+    .message > p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-height: 800px) {
+    iframe {
+        display: none;
+    }
+
+    .dashLink a {
+        display: grid;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 864px) {
+    iframe {
+        display: none;
+    }
+
+    .dashLink a {
+        display: grid;
+        align-self: center;
+        justify-self: center;
     }
 }
 
@@ -193,5 +244,12 @@ hr {
     .points p {
         font-size: 0.7rem;
         margin: 1.2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .sidebar > img {
+        width: 50px;
+        border: 2px solid var(--red);
     }
 }
